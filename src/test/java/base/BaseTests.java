@@ -26,6 +26,7 @@ public class BaseTests {
         LoginPageWithEmail loginPageWithEmail = indexSePage.clickLoginButton();
         loginPageWithEmail.setEmailField("tetiana.kharyna@gmail.com");
         loginPageWithEmail.setPasswordField("223334444");
+        //netx 3 lines I put just to test if it works, but the idea was to set up env for tests with logined user
         MainDashboardPage mainDashboardPage = loginPageWithEmail.clickLoginPrimaryButton();
         mainDashboardPage.getAlertText();
         System.out.println(driver.getTitle());
