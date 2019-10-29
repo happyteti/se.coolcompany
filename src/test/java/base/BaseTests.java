@@ -24,7 +24,6 @@ public class BaseTests {
         LoginPageWithEmail loginPageWithEmail = indexSePage.clickLoginButton();
         loginPageWithEmail.setEmailField("tetiana.kharyna@gmail.com");
         loginPageWithEmail.setPasswordField("223334444");
-        mainDas
         MainDashboardPage mainDashboardPage = loginPageWithEmail.clickLoginPrimaryButton();
         mainDashboardPage.getAlertText();
         System.out.println(driver.getTitle());
@@ -40,4 +39,5 @@ public class BaseTests {
         BaseTests test = new BaseTests();
         test.setUp();
     }
+    ///////
 }
